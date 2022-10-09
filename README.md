@@ -4,9 +4,9 @@ MsBuild_example project
 VCXPROJ文件是包含由MSBuild的XML模式定义的元素的XML文件。 这些元素告诉MSBuild要构建哪些项以及如何构建它们。 例如，VCXPROJ文件可能包含一些设置，这些设置告诉MSBuild在针对不同操作系统
 
 VCXPROJ文件包含的一些元素包括:
-"<Project>" :用于标识项目文件的XML模式，并为构建过程指定入口点
+\<Project\> :用于标识项目文件的XML模式，并为构建过程指定入口点
  
-"<PropertyGroup>" :用于定义生成配置属性
+\<PropertyGroup\> :用于定义生成配置属性
  
 "<ItemGroup>" :用于向构建系统中添加输入，如源代码文件
  
