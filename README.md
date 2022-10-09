@@ -7,15 +7,25 @@ VCXPROJ文件包含的一些元素包括:
 "<Project>" :用于标识项目文件的XML模式，并为构建过程指定入口点
  
 "<PropertyGroup>" :用于定义生成配置属性
+ 
 "<ItemGroup>" :用于向构建系统中添加输入，如源代码文件
+ 
 "<Target>” :用于指定和执行生成操作
+ 
 "<OutDir>" ：输出文件目录
+ 
 "<IncludePath>" :包含路径
+ 
 "<AdditionalIncludeDirectories>" :附加包含目录
+ 
 "<RuntimeLibrary>" :运行库
+ 
 "<AdditionalLibraryDirectories>" :附加库目录
+ 
 "<ClInclude>" :头文件
+ 
 "<ClCompile>" :源文件
+ 
 
 ![img](https://github.com/zhaikr/MsBuild_example/blob/main/doc/image/image1.jpg) 
 
