@@ -52,4 +52,7 @@ Msbuild运行主要依靠.vcxproj工程文件来进行编译
  
 更多内容请查看Microsoft Learning：以下网址
 演练：使用 MSBuild 创建 Visual Studio C++ 项目 | Microsoft Learn
-https://learn.microsoft.com/zh-cn/cpp/build/walkthrough-using-msbuild-to-create-a-visual-cpp-project?view=msvc-160
+https://learn.microsoft.com/zh-cn/cpp/build/walkthrough-using-msbuild-to-create-a-visual-cpp-project?view=msvc-160ke
+
+也可以下载Visual Studio 生成工具；
+msvc编译器工具组件是必须的对c++进行编译
