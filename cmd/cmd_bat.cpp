@@ -21,15 +21,16 @@ std::wstring Str2Wstr(std::string str)
 void CallCmd(const std::string& call_cmd)
 {
   std::wstring pszCmd_w = Str2Wstr(call_cmd);
-  STARTUPINFO si;
-  PROCESS_INFORMATION pi;
+  STARTUPINFO si;  // Pointer to STARTUPINFO structure;
+  PROCESS_INFORMATION pi;  // Pointer to PROCESS_INFORMATION structure;
   //PROCESS_INFORMATION pi = { 0 };
   //STARTUPINFO si = { sizeof(STARTUPINFO) };
   //GetStartupInfo(&si);
+  // 设置命令行进程启动信息(以隐藏方式启动命令并定位其输出到hWrite
   ZeroMemory( &si, sizeof(si) );
   si.cb = sizeof(si);
-  si.dwFlags = STARTF_USESHOWWINDOW | STARTF_USESHOWWINDOW;
-  si.wShowWindow = SW_HIDE;
+  si.dwFlags = STARTF_USESHOWWINDOW | STARTF_USESHOWWINDOW; //即以不显示窗口方式创建DOS进程。
+  si.wShowWindow = SW_HIDE; //隐藏窗口；
   ZeroMemory(&pi, sizeof(pi));
   //PROCESS_INFORMATION pi;
   // Start the child process.
